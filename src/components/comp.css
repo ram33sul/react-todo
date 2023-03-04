@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    color: white;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.button{
+    padding: 5px;
+    color: grey;
+    font-size: 35px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inputWrapper{
+    display: flex;
+    border: 2px solid silver;
+    width: 300px;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 50px;
+}
+.inputWrapper .input{
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    outline: 0;
+}
+.listComponentWrapper{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    border: 2px solid silver;
+    width: 300px;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 10px;
+}
+.inputCheckbox{
+    margin-left: 10px;
+}
+.label {
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.body{
+    background-color: black;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.completed{
+    color: lightgreen;
+    margin-top: 60px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(50,50,50);
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.unCompleted{
+    color: red;
+    margin-top: 60px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(50,50,50);
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.list{
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+.time{
+    color: gray;
+}
+
+.lightgreen{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+@media screen and (max-width:1000px){
+    #completed-container{
+        order: 2;
+    }
+    #toDo-container{
+        order: 1;
+    }
+    #unCompleted-container{
+        order: 3;
+    }
+}
